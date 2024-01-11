@@ -1,25 +1,13 @@
-import React, { useEffect, useState } from 'react'
-import getData from '../componentes/getData'
-const url='https://e23279ec-dbf2-46ea-9b5b-375037e64a96-00-lu8wikwdtwis.kirk.replit.dev/user/'
+import React /*,{ useEffect, useState }*/ from 'react';
+import getData from '../componentes/getData';
+// const url = 'https://e23279ec-dbf2-46ea-9b5b-375037e64a96-00-lu8wikwdtwis.kirk.replit.dev/user/';
 
 function Get() {
-  
-  const [length,setLength]=useState(1)
-  let list=[]
- list=getData()
+    // const [length, setLength] = useState(1);
+    let list = [];
+    list = getData();
 
-
-
-
- 
-
-  
-
-  
-
-  return (
-    <div className='flex flex-row'>{list}</div>
-  )
+    return <div className='flex flex-row'>{list}</div>;
 }
 
-export default Get 
+export default Get;

@@ -1,9 +1,7 @@
-import React from 'react'
+import React from 'react';
 
 function Patch() {
-  return (
-    <div>Patch</div>
-  )
+    return <div>Patch</div>;
 }
 
-export default Patch
+export default Patch;

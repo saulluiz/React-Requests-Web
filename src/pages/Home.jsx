@@ -1,11 +1,4 @@
-import { useState,useEffect } from "react"
+// import { useState, useEffect } from 'react';
 
-
-function Home(){
-   
-    
-
-
-
-}
-export default Home
+function Home() {}
+export default Home;
