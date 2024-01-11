@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link /*, Outlet*/ } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 const NavBar = () => {
     return (
         <nav className='flex flex-row bg-corM1 w-[100%] shadow-lg h-[80px] items-center justify-between '>
@@ -7,7 +7,7 @@ const NavBar = () => {
                 <Link to={'/'} className='buttonNav  '>
                     Home
                 </Link>
-
+                
                 <Link to={'/post'} className='buttonNav '>
                     Post
                 </Link>
