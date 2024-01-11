@@ -21,11 +21,11 @@ const CardPreview = (props) => {
  }else title='"Título"'
   return (
     <div
-    class=" max-w-[320px] h-[455px]  mt-[20px] w-[320px] my-auto ml-[30px] rounded-lg bg-[#f2f2f2] shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] ">
+    class=" max-w-[320px] h-[455px] overflow-hidden  mt-[20px] w-[320px] my-auto ml-[30px] rounded-lg bg-[#f2f2f2] shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] ">
     <div class="preview-card ">
       
       <img
-        class="rounded-t-lg w-[100%] "
+        class="rounded-t-lg object-cover h-[100%] min-w-[100%] "
         src={props.img} 
         alt="" 
        

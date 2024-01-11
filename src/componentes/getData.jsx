@@ -16,25 +16,24 @@ function getData() {
         
         useEffect(()=>{  
           
-          console.log(data.length)
-        for(let i=0;i<=data.length;i++){
+        for(let i=0;i<data.length;i++){
           let valor=(data[i])
-         console.log(valor)
+        
          list[i]=(
          <div><CardPreview
-        /*  autor={data[i].autor} 
+         autor={data[i].autor} 
           password={data[i].password}
           title={data[i].title}
           img={data[i].img}
-          text={data[i].text} */
+          text={data[i].text} 
        /></div>)
+       setOutput(list)
         }
         
         
         
         },[data.length]
-        
-        
+     
         
         )
       
@@ -48,19 +47,9 @@ function getData() {
    
   ) */
 
-  let objeto=JSON.stringify({
-    "img": "https://www.useupdate.com.br/media/magpleasure/mpblog/list_thumbnail_file/2/4/cache/1/119bdf99710d9a86013f24c82ab9b2da/24bfde45b5790f04b1d096565157f6a4.jpg",
-    "title": "Cachorro",
-    "postTime": "10/01/2024 19:28",
-    "password": "1234",
-    "autor": "Saulo Bacana",
-    "text": "Testando",
-    "id": 1
-})
-  objeto=objeto.split(',')
-  objeto=JSON.parse(objeto)
-  console.log(objeto.autor)
- 
+const [output,setOutput]=useState([])
+
+ return output
 }
 
 export default getData

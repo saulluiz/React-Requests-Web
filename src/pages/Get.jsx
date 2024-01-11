@@ -6,7 +6,7 @@ function Get() {
   
   const [length,setLength]=useState(1)
   let list=[]
- getData()
+ list=getData()
 
 
 
@@ -18,7 +18,7 @@ function Get() {
   
 
   return (
-    <div>{list}</div>
+    <div className='flex flex-row'>{list}</div>
   )
 }
 

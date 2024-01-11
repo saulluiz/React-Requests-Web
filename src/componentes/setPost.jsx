@@ -38,7 +38,7 @@ function setPost(data) {
   };
 
 
-    fetch(url, options).then(console.log("Foi")).catch(resolve=>alert(resolve));
+    fetch(url, options).then(console.log("Post concluido")).catch(resolve=>alert(resolve));
  
 }
 
