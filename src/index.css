@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap');
+
+*{
+    box-sizing: border-box;
+    font-family: 'Oswald', sans-serif;
+}
+
+
+
+@layer components {
+    .buttonNav{
+       @apply   bg-corR5 relative inline-flex items-center justify-center px-5 py-2 text-base font-bold text-black transition-all duration-200  border-2 border-transparent focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900 hover:bg-corR4 rounded
+    }
+    body{ }
+    .preview-card{
+        @apply relative overflow-hidden bg-cover bg-no-repeat  w-[100%] h-[250px] rounded-t-lg ;
+        background-image: url(./assets/media/no-image.png);
+        background-position: center;
+    }
+
+
+}
